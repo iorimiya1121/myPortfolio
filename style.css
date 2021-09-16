@@ -3,21 +3,75 @@
 /* 円の文字 */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 /* サブタイトル部分 */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Libre+Baskerville:ital@1&display=swap');
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');    
 
-/* 自己紹介 */
 
 body
 {
+    background-color: #222222;
+  
+}
+
+/* nav bar */
+
+nav
+{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+span.menuicon
+{
+    color: whitesmoke;
+    font-size: 1.5vw;
+
+}
+
+.toppage
+{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #222222;
 }
+
+/* sidebar */
+
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+    height: 500px;
+    background-color:  #222222;
+    box-shadow: 4px 0 4px #111111 ;
+    justify-content: space-evenly;
+    margin-top: 6%;
+
+}
+
+.sidebar:hover
+{
+    box-shadow: none;
+}
+.sidebar .icon:hover
+{
+    transform: rotateZ( 20deg ) ;
+
+}
+
+.icon
+{
+    width: 50px;
+    
+}
+
+
+/* 自己紹介 */
 
 h1
 {
@@ -56,7 +110,8 @@ h1
 .explainnext
 {
     display: inline-flex;
-    margin-left: 10%;
+    margin-left: 0%;
+    font-family: 'Libre Baskerville', serif;
     
 }
 
