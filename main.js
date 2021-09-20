@@ -1,6 +1,6 @@
 
 
-
+// トップページ
 particlesJS('hoge',{
     "particles":{
    
@@ -140,4 +140,6 @@ particlesJS('hoge',{
       "resize":true //canvasのサイズ変更にわせて拡大縮小するか否か
     }
   );
+  
+// スムーズスクロール
   

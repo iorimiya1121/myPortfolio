@@ -4,33 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iori's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-wrapper">
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Home</a></li>
-                <li><a href="badges.html">About</a></li>
-                <li><a href="collapsible.html">Skills</a></li>
-                <li><a href="collapsible.html">Services</a></li>
-                <li><a href="collapsible.html">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+          <div class="listcontain">
+            <a href="#hoge" class="list"><div class="navlist-hover">Home</div></a>
+            <a href="#about" class="list"><div class="">About</div></a>
+            <a href="#skills" class="list"><div class="">Skills</div></a>
+            <a href="#services" class="list"><div class="">Services</div></a>
+            <a href="#works" class="list"><div class="">Works</div></a>
+            <a href="#contact" class="list"><div class="">Contact</div></a>
+          </div>
+        </nav>
     </header>
+    <!-- トップページ -->
     <div id="hoge">
-      <div class="">
           <div class="title">
               <h1>Hi, I'm Iori Miyamoto.</h1>
               <h2>Web Developer.</h2>
           </div>
+    </div>
+    <!-- アバウト -->
+    <div id="about">
+      <div>
+        <h3>About me</h3>
+        <p class="subtext">My introduction</p>
+      </div>
+      <div class="aboutmecontents">
+        <img src="image/linkedin.jpg" class="mypic" alt="">
+        <div class="aboutmetext">
+          texttexttexttexttexttexttexttexttexttexttexttext
+          texttexttexttexttexttexttexttexttexttexttexttext
+          texttexttexttexttexttexttexttexttexttexttexttext
+        </div>
       </div>
     </div>
+      <!-- スキル -->
+      <div id="skills">
+        <div >
+          <h3>Skills</h3>
+          <p class="subtext">My tecnical level</p>
+        </div>
 
-<script src="particles.js"></script>
-<script src="main.js"></script>
+      </div>
+        <!-- サービス -->
+        <div id="services">
+          <div >
+            <h3>Services</h3>
+            <p class="subtext">What I offer</p>
+          </div>
+
+        </div>
+        <!-- ワークス -->
+        <div id="works">
+          <div >
+            <h3>Works</h3>
+            <p class="subtext">Recent my works</p>
+          </div>
+
+        </div>
+          <!-- コンタクト -->
+          <div id="contact">
+            <div >
+              <h3>Contact Me</h3>
+              <p class="subtext">Get in touch</p>
+            </div>
+
+          </div>
+          <!-- フッター -->
+          <footer>
+
+          </footer>
+
+
+    <script src="anime.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

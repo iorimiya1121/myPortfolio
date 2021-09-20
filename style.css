@@ -1,45 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
-
+html
+{
+  scroll-behavior: smooth;
+}
 
 body
 {
-  margin: 0 auto;
+  margin: 0;
   position: relative;
- 
-}
-/* ヘッダー */
-
-/* ナビゲーション */
-nav
-{
-  background-color: #ffffff;
 }
 
-nav ul a {
-  transition: background-color .3s;
-  font-size: 1.2rem;
-  color: rgba(0,0,0,0.5);
-  display: block;
-  padding: 0 40px;
-  cursor: pointer;
-}
-/* トップページ */
-
-#hoge
-{
-    width: 100%;
-    height: auto;
-    margin:0 auto;
-    background-color: white;
-    position: relative;
-    animation: feadInBox 7s;
-  }
-
+/* 文字デザイン */
 h1
 {
   position: absolute;
-  right: 31vw;
-  top: 27%;
+  right: 27vw;
+  top: 32%;
   font-size: 4em;
   animation: feadInBox 8s;
   font-family: 'PT Serif', serif;
@@ -47,8 +23,8 @@ h1
 
 h2{
   position: absolute;
-  right: 31vw;
-  top: 30%;
+  right: 26vw;
+  top: 35%;
   font-size: 3.5em;
   animation: feadInBox 22s;
   color: rgba(0,0,0,0.5);
@@ -57,7 +33,79 @@ h2{
 
 }
 
+h3
+{
+ text-align: center;
+ margin-top: 3%;
+ margin-bottom: 5%;
+ font-size: 2em;
+}
 
+p.subtext
+{
+  text-align: center;
+  font-size: 1.3em;
+  color: #ccc;
+  margin-top: -5%;
+}
+
+/* ヘッダー */
+
+header
+{
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
+/* ナビゲーション */
+nav
+{
+ margin: 0 auto;
+ 
+}
+
+.listcontain
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1.5%;
+  margin-right: 3%;
+}
+
+/* ナビゲーションリスト */
+a.list
+{
+  font-size: 1.3em;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-decoration: none;
+  color: #222222;
+}
+
+/* ナビゲーションリストホバーエフェクト */
+a.list:hover
+{
+  color: #006699;
+}
+
+/* トップページ */
+#hoge
+{
+    width: 100%;
+    height: 100vh;
+    margin:0 auto;
+    background-color: white;
+    position: relative;
+    animation: feadInBox 7s;
+  }
+
+
+/* トップページのテキストのフェード */
 @keyframes feadInBox
 {
   0%{
@@ -66,4 +114,74 @@ h2{
   100%{
     opacity: 100%;
   }
+}
+
+/* about */
+
+#about
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+
+.aboutmecontents
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+  width: 60%;
+  margin: 0 auto;
+  
+
+}
+/* aboutの写真 */
+.mypic
+{
+  width: 30%;
+  height: auto;
+}
+/* aboutのテキスト */
+.aboutmetext
+{
+  font-size: 2em;
+  text-align: left;
+  padding: 5%;
+}
+
+
+/* スキル */
+
+#skills
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+/* サービス */
+#services
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+/*ワークス */
+#works
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+/* コンタクト */
+#contact
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
 }
