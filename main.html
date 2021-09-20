@@ -10,7 +10,7 @@
     <header>
         <nav>
           <div class="listcontain">
-            <a href="#hoge" class="list"><div class="navlist-hover">Home</div></a>
+            <a href="#" class="list"><div class="navlist-hover">Home</div></a>
             <a href="#about" class="list"><div class="">About</div></a>
             <a href="#skills" class="list"><div class="">Skills</div></a>
             <a href="#services" class="list"><div class="">Services</div></a>
@@ -29,30 +29,35 @@
     <!-- アバウト -->
     <div id="about">
       <div>
-        <h3>About me</h3>
+        <h3><span>A</span>bout me</h3>
         <p class="subtext">My introduction</p>
       </div>
-      <div class="aboutmecontents">
-        <img src="image/linkedin.jpg" class="mypic" alt="">
-        <div class="aboutmetext">
-          texttexttexttexttexttexttexttexttexttexttexttext
-          texttexttexttexttexttexttexttexttexttexttexttext
-          texttexttexttexttexttexttexttexttexttexttexttext
+      <div class="aboutmecontents"><!--grid container-->
+        <img src="image/linkedin.jpg" class="aboutpic fadein" alt=""><!--main-->
+        <div class="aboutmetext fadein2"><!--sidebar-->
+          I'm a web developer,
+          with a extensive knowledge and experience. <br>
+          As a freelancer,working in web techologies. 
+        </div>
+        <div class="about_icon"><!--footer-->
+          <img src="image/github.png" class="icon fadein2" alt="">
+          <img src="image/instagram.png" class="icon fadein2" alt="">
         </div>
       </div>
+      
     </div>
       <!-- スキル -->
       <div id="skills">
         <div >
-          <h3>Skills</h3>
+          <h3><span>S</span>kills</h3>
           <p class="subtext">My tecnical level</p>
         </div>
 
       </div>
         <!-- サービス -->
         <div id="services">
-          <div >
-            <h3>Services</h3>
+          <div>
+            <h3><span class="servisetext">S</span>ervices</h3>
             <p class="subtext">What I offer</p>
           </div>
 
@@ -60,7 +65,7 @@
         <!-- ワークス -->
         <div id="works">
           <div >
-            <h3>Works</h3>
+            <h3><span>W</span>orks</h3>
             <p class="subtext">Recent my works</p>
           </div>
 
@@ -68,7 +73,7 @@
           <!-- コンタクト -->
           <div id="contact">
             <div >
-              <h3>Contact Me</h3>
+              <h3><span>C</span>ontact Me</h3>
               <p class="subtext">Get in touch</p>
             </div>
 
@@ -79,8 +84,10 @@
           </footer>
 
 
+    
     <script src="anime.min.js"></script>
     <script src="particles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

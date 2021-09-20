@@ -36,10 +36,17 @@ h2{
 h3
 {
  text-align: center;
- margin-top: 3%;
+ margin-top: 2%;
  margin-bottom: 5%;
  font-size: 2em;
 }
+
+h3 span
+{
+  font-size: 1.1em;
+  color: #006699;
+}
+
 
 p.subtext
 {
@@ -128,28 +135,84 @@ a.list:hover
 
 .aboutmecontents
 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 5%;
-  width: 60%;
-  margin: 0 auto;
-  
+   width: 60%;
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 400px;
+    margin: 0 auto;
+    padding-top: 5%;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
 
 }
 /* aboutの写真 */
-.mypic
+.aboutpic
 {
-  width: 30%;
+  width: 300px;
   height: auto;
+  border-radius: 10%;
+  grid-row: 1 / 2;
+  grid-column: 1 / 1;
+  box-shadow: 0 50px 50px rgba(0,0,0,0.6);
+  
 }
 /* aboutのテキスト */
 .aboutmetext
 {
-  font-size: 2em;
   text-align: left;
-  padding: 5%;
+  font-size: 1.5em;
+  padding-left: 10%;
+  padding-top: 5%;
+  grid-row: 1 / 2;
+  grid-column: 2 / 2;
+}
+/* アバウトのスライドイン */
+.fadein {
+	opacity : 0;
+	transform : translate(-200px, 60px);
+	transition : all 2000ms;
+	}
+
+  .fadein2 {
+    opacity : 0;
+    transform : translate(200px, 60px);
+    transition : all 2300ms;
+    }
+  
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+  }
+  .fadein2.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+  
+
+/* アイコン */
+.about_icon
+{
+  display: flex;
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+  margin-top: -20%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.icon
+{
+  width: 50px;
+  padding: 20%;
+}
+
+.icon:hover
+{
+ transform: rotatez(20deg);
 }
 
 
@@ -160,6 +223,7 @@ a.list:hover
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
+  background-color: #006699c7;
 }
 
 /* サービス */
@@ -168,7 +232,10 @@ a.list:hover
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
+  
 }
+
+
 
 /*ワークス */
 #works
