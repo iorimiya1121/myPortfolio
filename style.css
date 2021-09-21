@@ -1,4 +1,7 @@
+/* top page fonts */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+/* navbar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 html
 {
   scroll-behavior: smooth;
@@ -17,7 +20,7 @@ h1
   right: 27vw;
   top: 32%;
   font-size: 4em;
-  animation: feadInBox 8s;
+  animation: feadInBox 6s;
   font-family: 'PT Serif', serif;
 }
 
@@ -26,7 +29,7 @@ h2{
   right: 26vw;
   top: 35%;
   font-size: 3.5em;
-  animation: feadInBox 22s;
+  animation: feadInBox 10s;
   color: rgba(0,0,0,0.5);
   margin-top: 8%;
   font-family: 'PT Serif', serif;
@@ -43,11 +46,16 @@ h3
 
 h3 span
 {
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   color: #006699;
 }
 
 
+h3 span.servisetext
+{
+  
+  color: #fff;
+}
 p.subtext
 {
   text-align: center;
@@ -68,11 +76,7 @@ header
 }
 
 /* ナビゲーション */
-nav
-{
- margin: 0 auto;
- 
-}
+
 
 .listcontain
 {
@@ -83,21 +87,25 @@ nav
   margin-right: 3%;
 }
 
+
 /* ナビゲーションリスト */
 a.list
 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center;
   padding-left: 2%;
   padding-right: 2%;
   text-decoration: none;
   color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
 }
 
 /* ナビゲーションリストホバーエフェクト */
 a.list:hover
 {
   color: #006699;
+  font-size: 1.32em;
 }
 
 /* トップページ */
@@ -199,8 +207,9 @@ a.list:hover
   grid-row: 2 / 2;
   grid-column: 2 / 2;
   margin-top: -20%;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  margin-right: 30%;
   
 }
 
@@ -223,7 +232,7 @@ a.list:hover
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
-  background-color: #006699c7;
+  
 }
 
 /* サービス */
@@ -232,9 +241,85 @@ a.list:hover
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
+  background-color:#006699;
   
 }
 
+/* カード */
+.card-container
+{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap; 
+  
+}
+
+.card .cardicon
+{
+  position: absolute;
+  width: 60px;
+  top: 3%;
+
+}
+
+.card-container .card
+{
+  position: relative;
+  width: 330px;
+  height: 450px;
+  margin: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow: 3px 2px 2px rgba(0,0,0,0.15);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.03);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  padding-top: 3%;
+}
+
+
+.card-container .card .cardcontent
+{
+  position: relative;
+  text-align: center;
+  transition: 1s;
+  transform: translateY(130px);
+   opacity: 0;
+  
+}
+
+.card-container .card:hover .cardcontent
+{
+  transform: translateY(30px);
+  opacity: 1;
+}
+
+.cardcontent
+{
+  padding: 20px;
+  
+}
+
+.card-container .card .cardcontent h5
+{
+  font-size: 1.8em;
+  color: #ffffff;
+  
+}
+
+.card-container .card .cardcontent p
+{
+  font-size: 1.3em;
+  color: #ffffff;
+  
+}
 
 
 /*ワークス */
