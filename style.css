@@ -163,8 +163,11 @@ a.list:hover
   border-radius: 10%;
   grid-row: 1 / 2;
   grid-column: 1 / 1;
-  box-shadow: 0 50px 50px rgba(0,0,0,0.6);
-  
+  box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  background-color: #00669918;
 }
 /* aboutのテキスト */
 .aboutmetext
@@ -177,15 +180,15 @@ a.list:hover
   grid-column: 2 / 2;
 }
 /* アバウトのスライドイン */
-.fadein {
+/* .fadein {
 	opacity : 0;
-	transform : translate(-200px, 60px);
-	transition : all 2000ms;
-	}
+	transform : translate(-200px, 100px);
+	transition : all 3000ms;
+	} */
 
   .fadein2 {
     opacity : 0;
-    transform : translate(200px, 60px);
+    transform : translate(200px, 30px);
     transition : all 2300ms;
     }
   
@@ -271,13 +274,13 @@ a.list:hover
   margin: 30px;
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow: 3px 2px 2px rgba(0,0,0,0.15);
   border-radius: 15px;
   background: rgba(255,255,255,0.03);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  box-shadow: 3px 2px 2px rgba(0,0,0,0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px);
@@ -303,7 +306,7 @@ a.list:hover
 
 .cardcontent
 {
-  padding: 20px;
+  padding: 15px;
   
 }
 
@@ -316,8 +319,10 @@ a.list:hover
 
 .card-container .card .cardcontent p
 {
-  font-size: 1.3em;
+  margin-top: -3%;
+  font-size: 1.2em;
   color: #ffffff;
+  text-align: left;
   
 }
 

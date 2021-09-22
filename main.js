@@ -168,3 +168,12 @@ $(function(){
 		});
 	});
 });
+
+
+// バニラjs/カード3d
+VanillaTilt.init(document.querySelectorAll(".aboutpic"), {
+  max: 25,
+  speed: 400,
+  glare: true,
+  "max-glare": 1
+});
