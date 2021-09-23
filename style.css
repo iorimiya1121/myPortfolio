@@ -217,6 +217,7 @@ width: 300px;
    border: none;
    border-radius: 7px;
    transform: translateZ(.2em);
+   cursor: pointer;
  }
 
  .about_btn:hover
@@ -280,6 +281,7 @@ span.profile
 {
   width: 40px;
   padding: 20%;
+  cursor: pointer;
 }
 
 .icon:hover
@@ -636,6 +638,7 @@ button.livedemo_btn
   border-radius: 7px;
   background-color: #006699;
   color: #fff;
+  cursor: pointer;
 }
 
 
