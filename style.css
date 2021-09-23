@@ -56,7 +56,7 @@ h3 span
 h3 span.servisetext
 {
   
-  color: #fff;
+  color: #006699;
 }
 
 p
@@ -139,6 +139,26 @@ a.list:hover
   }
 }
 
+/* スクロールボタン */
+.icon_scroll
+{
+  width: 60px;
+  
+}
+
+a.icon_scroll
+{
+  position: absolute;
+  right: 48.5%;
+  top: 88%;
+  animation: feadInBox 10s;
+}
+
+a.icon_scroll:hover
+{
+  transform: translateY(.20em);
+}
+
 /* about */
 
 #about
@@ -178,6 +198,33 @@ a.list:hover
 
 }
 
+.about_btn_wrap
+{
+ position: absolute;
+width: 300px;
+ margin-top: 5%;
+ top: 27.5%;
+ left:26%
+ 
+}
+
+.about_btn
+ {
+   font-size: 1.2em;
+   padding: 3%;
+   background-color: #006699;
+   color: #fff;
+   border: none;
+   border-radius: 7px;
+   transform: translateZ(.2em);
+ }
+
+ .about_btn:hover
+ {
+  background-color: #fff;
+  color: #006699;
+  border: 2px solid #006699;
+ }
 
 /* aboutのテキスト */
 
@@ -436,7 +483,7 @@ span.profile
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
-  background-color:#006699;
+  background-color:#7676775b;
   
 }
 
@@ -505,7 +552,7 @@ span.profile
 .card-container .card .cardcontent h5
 {
   font-size: 1.8em;
-  color: #ffffff;
+  color: #006699;
   
 }
 
@@ -513,7 +560,7 @@ span.profile
 {
   margin-top: -3%;
   font-size: 1.2em;
-  color: #ffffff;
+  color: #030303;
   text-align: left;
   
 }
@@ -523,14 +570,80 @@ span.profile
 #works
 {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   padding-top: 80px;
+  background-color: #2196f3;
 }
+
+
+.swiper
+{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.swiper-slide 
+{
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+  background-color: #d1ebff;
+  filter: blur(4px);
+  
+}
+
+.swiper-slide-active
+ {
+  filter: blur(0px);
+  background-color: #fff;
+ }
+
+.swiper-slide img 
+{
+ 
+  width: 100%;
+  height: auto;
+}
+
+.works_card 
+{
+  text-align: center;
+  color: #999;
+}
+
+
+
+
+p.card_content
+{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.livedemo
+{
+  margin-top: 5%;
+}
+button.livedemo_btn
+{
+  border: none;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 3%;
+  border-radius: 7px;
+  background-color: #006699;
+  color: #fff;
+}
+
 
 /* コンタクト */
 
 #contact
 {
+  position: relative;
   width: 100vw;
   height: 80vh;
   padding-top: 80px;
@@ -552,7 +665,7 @@ span.profile
 .column_left
 {
  margin-top: 3%;
- margin-right: 2%;
+ margin-right: 5%;
 }
 .contactcontent
 {
@@ -691,6 +804,33 @@ p.contact-subtext
   color: #000;
 }
 
+/* スクロールアップボタン */
+.scroll_up
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  position: absolute;
+  right: 5%;
+  top:85%;
+  background-color: #006699dc;
+}
+
+.scroll_up:hover
+{
+  background-color: #fff;
+  border: 2px solid #006699;
+  transform: translateZ(.25em);
+}
+
+.scroll_up_icon
+{
+  width: 40px;
+ padding-top: 10%;
+}
+
 
 /* フッター */
 footer
@@ -702,7 +842,8 @@ footer
 .footer
 {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 800;
   color: #fff;
   margin-right: 8%;
 }

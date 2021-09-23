@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iori's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,6 +29,9 @@
               </h1>
               <h2>全ての人がテクノロジーの力で輝ける世界へ</h2>
           </div>
+          <div class="home_scroll">
+            <a href="#about" class="icon_scroll"><img src="image/scroll.png" class="icon_scroll" alt=""></a>
+          </div>
     </div>
     <!-- アバウト -->
     <div id="about">
@@ -36,6 +40,9 @@
         <p class="subtext">My introduction</p>
       </div>
       <div class="aboutmecontents"><!--grid container-->
+        <div class="about_btn_wrap">
+          <a href="#contact"><button class="about_btn">Contact me</button></a>
+        </div>
         <img src="image/linkedin.png" class="aboutpic fadein" alt=""><!--main-->
         <div class="aboutmetext fadein2"><!--sidebar-->
          <span class="profile">--経歴-- </span> <br>
@@ -60,7 +67,7 @@
           英語のオンラインコーチやweb制作を主に行っている
         </div>
         <div class="about_icon"><!--footer-->
-          <img src="image/github.png" class="icon fadein2" alt="">
+          <a href="https://github.com/iorimiya1121"  target="_blank" rel="noopener noreferrer"><img src="image/github.png" class="icon fadein2" alt=""></a>
           <img src="image/instagram.png" class="icon fadein2" alt="">
         </div>
       </div>
@@ -76,7 +83,7 @@
         <div class="skillbar">
         <!-- フロントエンド -->
            <div class="skillbar-both fadein3">
-             <div class="skillstatus"> Front-end</div>
+             <div class="skillstatus"> ＜Front-end＞</div>
            <!-- html -->
              <div class="bar">
               <div class="skill-info">
@@ -109,7 +116,7 @@
            </div>
             <!-- バックエンド -->
            <div class="skillbar-both fadein3">
-            <div class="skillstatus"> Server-side</div>
+            <div class="skillstatus">＜Server-side/＞</div>
             <!-- python -->
             <div class="bar">
              <div class="skill-info">
@@ -175,6 +182,84 @@
             <h3><span>W</span>orks</h3>
             <p class="subtext">Recent my works</p>
           </div>
+          
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- 1枚目 -->
+              <div class="swiper-slide">
+                <div class="works_card">
+                  <img src="image/Netflix.png" class="netflix" alt="">
+                  <p class="card_content">
+                    Netflixのホームページの模写コーディング。<br>
+                    使用言語：HTML/CSS/Bootstrap/Jquery
+
+                  </p>
+                  <div class="livedemo">
+                    <a href="https://cloneofnetflix.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button class="livedemo_btn">Live Demo</button></a>
+                  </div>
+                </div>
+              </div>
+              <!-- 2枚目 -->
+              <div class="swiper-slide">
+                <div class="works_card">
+                  <img src="image/twitter-clone.png" class="twitter" alt="">
+                  <p class="card_content">
+                    Twitter Cloneの作成。<br>
+                    使用言語：HTML/CSS/Django
+                  </p>
+                  <div class="livedemo">
+                    <a href=""target="_blank" rel="noopener noreferrer"><button class="livedemo_btn">Live Demo</button></a>
+                  </div>
+                </div>
+              </div>
+              <!-- 3枚目 -->
+              <div class="swiper-slide">
+                <div class="works_card">
+                  <img src="image/hp.png" class="lp" alt="">
+                  <p class="card_content">
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                  </p>
+                  <div class="livedemo">
+                    <a href=""　target="_blank" rel="noopener noreferrer"><button class="livedemo_btn">Live Demo</button></a>
+                  </div>
+                </div>
+              </div>
+               <!-- 4枚目 -->
+               <div class="swiper-slide">
+                <div class="works_card">
+                  <img src="image/hp.png" class="lp" alt="">
+                  <p class="card_content">
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                  </p>
+                  <div class="livedemo">
+                    <a href=""　target="_blank" rel="noopener noreferrer"><button class="livedemo_btn">Live Demo</button></a>
+                  </div>
+                </div>
+              </div>
+              <!-- 5枚目 -->
+              <div class="swiper-slide">
+                <div class="works_card">
+                  <img src="image/hp.png" class="lp" alt="">
+                  <p class="card_content">
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                    texttexttexttexttexttexttext
+                  </p>
+                  <div class="livedemo">
+                    <a href=""　target="_blank" rel="noopener noreferrer"><button class="livedemo_btn">Live Demo</button></a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+      
+
 
         </div>
           <!-- コンタクト -->
@@ -242,6 +327,10 @@
                     </div>
                   </div>
                 </form>
+
+                <div class="scroll_up">
+                  <a href="#hoge"><img src="image/move-up.png" class="scroll_up_icon" alt=""></a>
+                </div>
             </div>
                  
             </div>
@@ -251,14 +340,14 @@
             <div class="foot_wrap">
               <div class="footer">Iori's Portfolio</div>
               <div class="footer_icon">
-                <img src="image/github.png"  class="footer_icon_image git" alt="">
-                <img src="image/instagram.png" class="footer_icon_image insta" alt="">
+                <a href="https://github.com/iorimiya1121"  target="_blank" rel="noopener noreferrer"><img src="image/github.png"  class="footer_icon_image git" alt=""></a>
+                <a href="https://github.com/iorimiya1121"  target="_blank" rel="noopener noreferrer"><img src="image/instagram.png" class="footer_icon_image insta" alt=""></a>
               </div>
             </div> 
           </footer>
 
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="particles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
