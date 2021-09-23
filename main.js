@@ -177,3 +177,31 @@ VanillaTilt.init(document.querySelectorAll(".aboutpic"), {
   glare: true,
   "max-glare": 1
 });
+
+
+// スキルバーフェードイン
+$(function(){
+	$(window).scroll(function (){
+		$('.fadein3').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 50){
+				$(this).addClass('scrollin3');
+			}
+		});
+	});
+});
+
+$(function(){
+	$(window).scroll(function (){
+		$('.fadein4').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 20){
+				$(this).addClass('scrollin4');
+			}
+		});
+	});
+});

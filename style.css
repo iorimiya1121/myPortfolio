@@ -1,4 +1,5 @@
 /* top page fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 /* navbar fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
@@ -17,18 +18,19 @@ body
 h1
 {
   position: absolute;
-  right: 27vw;
-  top: 32%;
-  font-size: 4em;
+  right: 29vw;
+  top: 20%;
+  font-size: 5em;
   animation: feadInBox 6s;
-  font-family: 'PT Serif', serif;
+  font-family: 'Spectral', serif;
+  line-height: 1.3;
 }
 
 h2{
   position: absolute;
-  right: 26vw;
-  top: 35%;
-  font-size: 3.5em;
+  right: 23vw;
+  top: 47%;
+  font-size: 2.5em;
   animation: feadInBox 10s;
   color: rgba(0,0,0,0.5);
   margin-top: 8%;
@@ -56,6 +58,12 @@ h3 span.servisetext
   
   color: #fff;
 }
+
+p
+{
+  margin: 0;
+}
+
 p.subtext
 {
   text-align: center;
@@ -143,7 +151,7 @@ a.list:hover
 
 .aboutmecontents
 {
-   width: 60%;
+   width: 68%;
     display: grid;
     grid-template-rows: 400px;
     grid-template-columns: 400px;
@@ -166,29 +174,34 @@ a.list:hover
   box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px);
-  background-color: #00669918;
+  background-color: #aaaaaa0e;
+
 }
+
+
 /* aboutのテキスト */
+
+span.profile
+{
+  font-size: 1.2em;
+  color: #006699;
+  font-weight: 700;
+
+}
 .aboutmetext
 {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1em;
+  line-height: 1.4;
   padding-left: 10%;
-  padding-top: 5%;
+  padding-top: 0%;
   grid-row: 1 / 2;
   grid-column: 2 / 2;
 }
-/* アバウトのスライドイン */
-/* .fadein {
-	opacity : 0;
-	transform : translate(-200px, 100px);
-	transition : all 3000ms;
-	} */
 
   .fadein2 {
     opacity : 0;
-    transform : translate(200px, 30px);
+    transform : translate(200px, 40px);
     transition : all 2300ms;
     }
   
@@ -209,16 +222,16 @@ a.list:hover
   display: flex;
   grid-row: 2 / 2;
   grid-column: 2 / 2;
-  margin-top: -20%;
+  margin-top: -5%;
   justify-content: left;
   align-items: center;
-  margin-right: 30%;
+  margin-right: 20%;
   
 }
 
 .icon
 {
-  width: 50px;
+  width: 40px;
   padding: 20%;
 }
 
@@ -235,9 +248,188 @@ a.list:hover
   width: 100vw;
   height: 100vh;
   padding-top: 80px;
+  margin: 0 auto;
+}
+
+/* スキルバーラップ */
+.skillbar
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 8%;
+ 
+}
+/* スキルバー */
+.skillbar-both
+{
+  width: 500px;
+  background-color: rgba(245, 245, 245, 0.185);
+  box-shadow:  5px 5px 10px rgba(0,0,0,0.1);
+  border-top:1px solid rgb(238, 238, 238);
+  border-left:1px solid rgb(238, 238, 238);
+  filter: blur(0.5);
+  padding: 15px 30px;
+  border-radius: 20px;
+
+}
+.skillstatus
+{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.skillbar-both.fadein3 {
+  opacity : 0;
+  transition : all 2300ms;
+  transform : translateY(200px);
+  }
+
+  .fadein3.scrollin3 {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.skillbar-both .bar
+{
+  margin: 5%;
+}
+.skillbar-both .bar .skiil-info
+{
+ padding-bottom: 1%;
+}
+.skillbar-both .bar .skill-info span
+{
+  font-size: 15px;
+  font-weight: 600;
   
 }
 
+.skillbar-both .progressline
+{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  margin-top: 5%;
+  background-color: #cccccc;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.skillbar-both .progressline span
+{
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  background-color: #006699;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 3s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate
+{
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+.skillbar-both .progressline span::before
+{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+
+.skillbar-both .progressline span::after
+{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -28px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+/* html */
+.progressline.html span
+{
+  width: 85%;
+}
+.progressline.html span::after
+{
+  content: "85%";
+}
+/* css */
+.progressline.css span
+{
+  width: 70%;
+}
+.progressline.css span::after
+{
+  content: "70%";
+}
+/* Js */
+.progressline.js span
+{
+  width: 65%;
+}
+.progressline.js span::after
+{
+  content: "65%";
+}
+/* react */
+.progressline.react span
+{
+  width: 40%;
+}
+.progressline.react span::after
+{
+  content: "40%";
+}
+/* python */
+.progressline.python span
+{
+  width: 65%;
+}
+.progressline.python span::after
+{
+  content: "65%";
+}
+
+/* django */
+.progressline.django span
+{
+  width: 60%;
+}
+.progressline.django span::after
+{
+  content: "60%";
+}
+/* sql */
+.progressline.sql span
+{
+  width: 40%;
+}
+.progressline.sql span::after
+{
+  content: "40%";
+}
 /* サービス */
 #services
 {
@@ -283,7 +475,7 @@ a.list:hover
   box-shadow: 3px 2px 2px rgba(0,0,0,0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(50px);
   padding-top: 3%;
 }
 
@@ -331,14 +523,215 @@ a.list:hover
 #works
 {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding-top: 80px;
 }
 
 /* コンタクト */
+
 #contact
 {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding-top: 80px;
+  text-align: center;
+  
+}
+
+.contactarea
+{
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+/* コンタクトひだり側 */
+
+.column_left
+{
+ margin-top: 3%;
+ margin-right: 2%;
+}
+.contactcontent
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+img.contact_icon
+{
+  width: 30px;
+  height: auto;
+  margin-right: 3%;
+}
+
+.callcontact_text
+{
+  margin: 5%;
+  
+  
+}
+
+
+.conatct_maintext
+{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #006699;
+  margin-bottom: 3%;
+}
+
+p.contact-subtext
+{
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(109, 109, 109);
+}
+
+/* コンタクト＿右側 */
+
+.column_right {
+  width: 60%;
+}
+
+.column_right .column_right_texts
+{
+  margin-bottom: 5%;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.column_right form .fields
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+ 
+}
+
+.fields-top
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.column_right form .fields .field
+{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  
+}
+
+.column_right form .name
+{
+  margin-right: 10px;
+  
+}
+.column_right form .emaill
+{
+  margin-left: 10px;
+}
+
+
+.column_right form .fields .field input
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid darkgrey;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 100%;
+}
+
+
+.column_right form .fields .field textarea
+{
+  width: 100%;
+  height: 200%;
+  border: 1px solid darkgrey;
+  outline: none;
+  border-radius: 6px;
+  resize: none;
+  padding-left: 10px;
+  font-size: 120%;
+}
+
+.column_right form .button
+{
+  height: 50px;
+  width: 170px;
+  margin-top: 50px;
+}
+
+.column_right form .button button{
+  width: 100%;
+  height: 100%;
+ background-color: #006699;
+ color: #fff;
+ border-radius: 6px;
+ border: none;
+ font-size: 1.1em;
+ cursor: pointer;
+ transform: all 0.7s ease ;
+}
+
+.column_right form .button button:hover
+{
+  background-color: #fff;
+  border: 2px solid #006699;
+  color: #000;
+}
+
+
+/* フッター */
+footer
+{
+  height: 150px;
+  width: 100%;
+  background-color: #006699;
+}
+.footer
+{
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+  margin-right: 8%;
+}
+
+.foot_wrap
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.footer_icon
+{
+  width: 200px;
+
+}
+.footer_icon_image 
+{
+  margin-left: 8%;
+  width: 40px;
+}
+
+.footer_icon_image .git
+{
+ margin-right: 10%;
+}
+.footer_icon_image .insta
+{
+ margin-left: 10%;
 }
