@@ -159,6 +159,16 @@ a.icon_scroll:hover
   transform: translateY(.20em);
 }
 
+p.icon_scroll
+{
+  font-weight: 500;
+  font-size: 1.3em;
+  position: absolute;
+  right: 48%;
+  top: 84%;
+  animation: feadInBox 10s;
+}
+
 /* about */
 
 #about
@@ -594,7 +604,6 @@ span.profile
   height: 500px;
   background-color: #d1ebff;
   filter: blur(4px);
-  
 }
 
 .swiper-slide-active
@@ -614,6 +623,7 @@ span.profile
 {
   text-align: center;
   color: #999;
+
 }
 
 
@@ -628,6 +638,7 @@ p.card_content
 .livedemo
 {
   margin-top: 5%;
+  
 }
 button.livedemo_btn
 {
@@ -639,6 +650,15 @@ button.livedemo_btn
   background-color: #006699;
   color: #fff;
   cursor: pointer;
+  
+}
+
+button.livedemo_btn:hover
+{
+  color: #006699;
+  border:2px solid #006699;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
 }
 
 
