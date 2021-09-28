@@ -18,9 +18,12 @@ body
 h1
 {
   position: absolute;
-  right: 29vw;
-  top: 20%;
-  font-size: 5em;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  top: 26%;
+  font-size: 4.5em;
   animation: feadInBox 6s;
   font-family: 'Spectral', serif;
   line-height: 1.3;
@@ -28,7 +31,9 @@ h1
 
 h2{
   position: absolute;
-  right: 23vw;
+  right: 0;
+  left: 0;
+  text-align: center;
   top: 47%;
   font-size: 2.5em;
   animation: feadInBox 10s;
@@ -72,6 +77,32 @@ p.subtext
   margin-top: -5%;
 }
 
+/* タブレット */
+@media only screen and (max-width:1024px) {
+
+  h1
+  {
+    font-size: 3em;
+  }
+  h2
+  {
+    font-size: 1.5em;
+  }
+
+  }
+/* SP */
+@media only screen and (max-width:599px) {
+  h1
+  {
+    font-size: 3em;
+  }
+  h2
+  {
+    font-size: 1.5em;
+  }
+
+  }
+
 /* ヘッダー */
 
 header
@@ -83,6 +114,18 @@ header
   background-color: white;
 }
 
+@media only screen and (max-width:1024px){
+  header{
+    height: 60px;
+  }
+
+}
+
+@media only screen and (max-width:599px){
+  header{
+    height: 40px;
+  }
+}
 /* ナビゲーション */
 
 
@@ -108,6 +151,18 @@ a.list
   font-family: 'Libre Baskerville', serif;
   font-weight: 600;
 }
+/* タブレット */
+@media only screen and (max-width:1024px){
+  a.list
+  {
+    font-size: .8em;
+
+  }
+}
+/* sp */
+@media only screen and (max-width:599px){
+
+}
 
 /* ナビゲーションリストホバーエフェクト */
 a.list:hover
@@ -115,6 +170,7 @@ a.list:hover
   color: #006699;
   font-size: 1.32em;
 }
+
 
 /* トップページ */
 #hoge
@@ -181,7 +237,7 @@ p.icon_scroll
 
 .aboutmecontents
 {
-   width: 68%;
+    width: 68%;
     display: grid;
     grid-template-rows: 400px;
     grid-template-columns: 400px;
@@ -210,18 +266,18 @@ p.icon_scroll
 
 .about_btn_wrap
 {
- position: absolute;
-width: 300px;
- margin-top: 5%;
- top: 27.5%;
- left:26%
- 
+  margin-top: 10%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3%;
+  
 }
 
 .about_btn
  {
+   width: 130px;
    font-size: 1.2em;
-   padding: 3%;
+   padding: 5%;
    background-color: #006699;
    color: #fff;
    border: none;
@@ -278,10 +334,8 @@ span.profile
 .about_icon
 {
   display: flex;
-  grid-row: 2 / 2;
-  grid-column: 2 / 2;
-  margin-top: -5%;
-  justify-content: left;
+  margin-top: 5%;
+  justify-content: space-evenly;
   align-items: center;
   margin-right: 20%;
   
@@ -297,6 +351,99 @@ span.profile
 .icon:hover
 {
  transform: rotatez(20deg);
+}
+
+/* アバウト */
+@media only screen and (max-width:1024px){
+  #about
+  {
+    height: 140vh;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .aboutmecontents
+  {
+    width: 53%;
+    display: flex;
+    grid-template-rows: 300px;
+    grid-template-columns: 300px;
+    margin: 0 auto;
+    padding-top: 5%;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_btn_wrap
+  {
+    text-align: center;
+  }
+    /* 写真 */
+    .aboutpic
+    {
+      width: 200px;
+      
+    }
+    /* アバウトのテキスト */
+    
+    .aboutmetext
+      {
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.4;
+        padding: 0;
+        padding-top: 3%;
+      }
+  
+    .about_btn_wrap
+    {
+    margin-top: 3%;
+    text-align: center;
+    margin: 0 auto;
+   
+    
+    }
+    .about_btn
+    {
+      font-size: 1em;
+      padding: 3%;
+      background-color: #006699;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      transform: translateZ(.2em);
+      cursor: pointer;
+    }
+    .about_icon
+    {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 0;
+
+    }
+    .fadein2 {
+      opacity : 0;
+      transform : translate(0px, 100px);
+      transition : all 2000ms;
+      }
+    
+  /* 画面内に入った状態 */
+  .fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+    .fadein2.scrollin {
+      opacity : 1;
+      transform : translate(0, 0);
+      }
+
+}
+/* sp */
+@media only screen and (max-width:599px){
+  
 }
 
 
