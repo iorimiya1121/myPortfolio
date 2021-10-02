@@ -23,7 +23,7 @@ h1
   text-align: center;
   margin: auto;
   top: 26%;
-  font-size: 4.5em;
+  font-size: 5em;
   animation: feadInBox 6s;
   font-family: 'Spectral', serif;
   line-height: 1.3;
@@ -88,7 +88,10 @@ p.subtext
   {
     font-size: 1.5em;
   }
-
+  h3
+  { 
+   font-size: 1.6em;
+  }
   }
 /* SP */
 @media only screen and (max-width:599px) {
@@ -151,18 +154,6 @@ a.list
   font-family: 'Libre Baskerville', serif;
   font-weight: 600;
 }
-/* タブレット */
-@media only screen and (max-width:1024px){
-  a.list
-  {
-    font-size: .8em;
-
-  }
-}
-/* sp */
-@media only screen and (max-width:599px){
-
-}
 
 /* ナビゲーションリストホバーエフェクト */
 a.list:hover
@@ -171,12 +162,39 @@ a.list:hover
   font-size: 1.32em;
 }
 
+/* タブレット */
+@media only screen and (max-width:1024px){
+
+.listcontain
+{
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+a.list
+{
+  line-height: 40px;
+  font-size: .9em;
+}
+a.list:hover
+{
+  color: #006699;
+  font-size: 1em;
+}
+
+}
+/* sp */
+@media only screen and (max-width:599px){
+
+}
+
+
 
 /* トップページ */
 #hoge
 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin:0 auto;
     background-color: white;
     position: relative;
@@ -196,17 +214,22 @@ a.list:hover
 }
 
 /* スクロールボタン */
+
 .icon_scroll
 {
   width: 60px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top: 88%;
+  margin: auto;
   
 }
 
 a.icon_scroll
 {
-  position: absolute;
-  right: 48.5%;
-  top: 88%;
+  
   animation: feadInBox 10s;
 }
 
@@ -215,14 +238,23 @@ a.icon_scroll:hover
   transform: translateY(.20em);
 }
 
-p.icon_scroll
-{
-  font-weight: 500;
-  font-size: 1.3em;
-  position: absolute;
-  right: 48%;
-  top: 84%;
-  animation: feadInBox 10s;
+@media only screen and (max-width:1024px){
+
+  #hoge
+  {
+    height: 80vh;
+  }
+  .icon_scroll
+  {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width:599px){
+  .icon_scroll
+  {
+    width: 30px;
+  }
 }
 
 /* about */
@@ -636,11 +668,52 @@ span.profile
 {
   content: "40%";
 }
+
+/* タブレット */
+@media only screen and (max-width:1024px){
+
+  #skills
+{
+  width: 100vw;
+  height: 130%;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+  .skillbar
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skillstatus
+  {
+    font-size: 1.1em;
+  }
+  .skillbar-both .bar .skill-info span
+{
+  font-size: 13px;
+  font-weight: 600;
+  
+}
+.skillbar-both
+{
+  width: 350px;
+  margin-bottom: 5%;
+}
+  
+}
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
+
+
+/* ここからサービスセクション */
 /* サービス */
 #services
 {
   width: 100vw;
-  height: 100vh;
+  height: 130%;
   padding-top: 80px;
   background-color:#7676775b;
   
@@ -724,7 +797,44 @@ span.profile
   
 }
 
+/* タブレット */
+@media only screen and (max-width:1024px){
+  #services
+{
+  width: 100vw;
+  height: 200%;
+  padding-top: 80px;
+}
 
+.card .cardicon
+{
+  position: absolute;
+  width: 45px;
+  top: 3%;
+
+}
+.card-container .card
+{
+    width: 280px;
+    height: 400px;
+}
+.card-container .card .cardcontent h5
+{
+  font-size: 1.5em;
+}
+.card-container .card .cardcontent p
+{
+  font-size: 1em;
+}
+}
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
+
+
+/*ワークスのセクションです */
 /*ワークス */
 #works
 {
@@ -808,6 +918,34 @@ button.livedemo_btn:hover
   box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
 }
 
+/* タブレット */
+@media only screen and (max-width:1024px){
+  .swiper-slide 
+{
+  width: 300px;
+  height: 400px;
+}
+p.card_content
+{
+  font-size: .8em;
+  padding-bottom: 5%;
+}
+
+button.livedemo_btn
+{
+  font-size: 1.1em;
+}
+
+
+}
+
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
+
+
 
 /* コンタクト */
 
@@ -828,6 +966,7 @@ button.livedemo_btn:hover
   width: 75%;
   margin: 0 auto;
   margin-top: 5%;
+  align-items: center;
 }
 
 /* コンタクトひだり側 */
@@ -855,8 +994,6 @@ img.contact_icon
 .callcontact_text
 {
   margin: 5%;
-  
-  
 }
 
 
@@ -875,6 +1012,44 @@ p.contact-subtext
   color: rgb(109, 109, 109);
 }
 
+/* タブレット */
+@media only screen and (max-width:1024px){
+
+  .contactarea
+{
+  
+  width: 80%;
+
+}
+  img.contact_icon
+{
+  width: 20px;
+  height: auto;
+  margin-right: 2%;
+}
+.callcontact_text
+{
+  margin: 3%;
+}
+.conatct_maintext
+{
+  font-size: .9em;
+
+}
+
+p.contact-subtext
+{
+  font-size: .7em;
+
+}
+
+
+}
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
 /* コンタクト＿右側 */
 
 .column_right {
@@ -974,6 +1149,37 @@ p.contact-subtext
   color: #000;
 }
 
+/* タブレッと */
+@media only screen and (max-width:1024px){
+  .column_right .column_right_texts
+{
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.column_right form .button
+{
+  height: 40px;
+  width: 130px;
+  margin-top: 50px;
+}
+
+.column_right form .button button
+{
+ border-radius: 7px;
+ font-size: 0.9em;
+
+}
+
+}
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
+
 /* スクロールアップボタン */
 .scroll_up
 {
@@ -1002,20 +1208,42 @@ p.contact-subtext
 }
 
 
+/* タブレット */
+@media only screen and (max-width:1024px){
+  .scroll_up
+{
+  width: 45px;
+  height: 45px;
+}
+
+.scroll_up_icon
+{
+  width: 25px;
+ padding-top: 20%;
+}
+
+}
+
+/* sp */
+@media only screen and (max-width:599px){
+  
+}
+
 /* フッター */
 footer
 {
   height: 150px;
   width: 100%;
   background-color: #006699;
+  text-align: center;
 }
 .footer
 {
-  text-align: center;
+  
   font-size: 1.5em;
   font-weight: 800;
   color: #fff;
-  margin-right: 8%;
+
 }
 
 .foot_wrap
@@ -1024,7 +1252,8 @@ footer
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding-top: 3%;
+  padding-top: 5%;
+  
 }
 
 .footer_icon
@@ -1045,4 +1274,30 @@ footer
 .footer_icon_image .insta
 {
  margin-left: 10%;
+}
+
+/* タブレット*/
+@media only screen and (max-width:1024px){
+  footer
+  {
+    height: 120px;
+   
+  }
+  .footer
+{
+  
+  font-size: 1.1em;
+  font-weight: 800;
+  color: #fff;
+
+}
+.footer_icon_image 
+{
+  margin-left: 8%;
+  width: 30px;
+}
+}
+/* sp */
+@media only screen and (max-width:599px){
+  
 }
