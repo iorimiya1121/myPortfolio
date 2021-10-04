@@ -87,6 +87,7 @@ p.subtext
   h2
   {
     font-size: 1.5em;
+  
   }
   h3
   { 
@@ -97,11 +98,21 @@ p.subtext
 @media only screen and (max-width:599px) {
   h1
   {
-    font-size: 3em;
+    font-size: 1.6em;
+   
   }
   h2
   {
-    font-size: 1.5em;
+    font-size: .8em;
+   
+  }
+  h3
+  { 
+   font-size: 1.1em;
+  }
+  p.subtext
+  {
+    font-size: .8em;
   }
 
   }
@@ -185,7 +196,22 @@ a.list:hover
 }
 /* sp */
 @media only screen and (max-width:599px){
-
+  .listcontain
+  {
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  a.list
+  {
+    line-height: 30px;
+    font-size: .5em;
+  }
+  a.list:hover
+  {
+    color: #006699;
+    font-size: .6em;
+  }
 }
 
 
@@ -251,9 +277,14 @@ a.icon_scroll:hover
 }
 
 @media only screen and (max-width:599px){
+  #hoge
+  {
+    height: 55vh;
+  }
   .icon_scroll
   {
     width: 30px;
+   top: 80%;
   }
 }
 
@@ -475,7 +506,96 @@ span.profile
 }
 /* sp */
 @media only screen and (max-width:599px){
+  #about
+  {
+    height: 120%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .aboutmecontents
+  {
+    width: 53%;
+    display: flex;
+    grid-template-rows: 300px;
+    grid-template-columns: 300px;
+    margin: 0 auto;
+    padding-top: 5%;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_btn_wrap
+  {
+    text-align: center;
+  }
+    /* 写真 */
+    .aboutpic
+    {
+      width: 150px;
+      
+    }
+    /* アバウトのテキスト */
+    
+    .aboutmetext
+      {
+        text-align: center;
+        font-size: .8em;
+        line-height: 1.4;
+        padding: 0;
+        padding-top: 3%;
+      }
   
+    .about_btn_wrap
+    {
+    margin-top: 3%;
+    text-align: center;
+    margin: 0 auto;
+   
+    
+    }
+    .about_btn
+    {
+      font-size: 1em;
+      padding: 3%;
+      background-color: #006699;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      transform: translateZ(.2em);
+      cursor: pointer;
+    }
+    .about_icon
+    {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 0;
+
+    }
+    .icon
+{
+  width: 29px;
+  padding: 20%;
+  cursor: pointer;
+}
+    .fadein2 {
+      opacity : 0;
+      transform : translate(0px, 100px);
+      transition : all 2000ms;
+      }
+    
+  /* 画面内に入った状態 */
+  .fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+    .fadein2.scrollin {
+      opacity : 1;
+      transform : translate(0, 0);
+      }
 }
 
 
@@ -704,7 +824,37 @@ span.profile
 
 /* sp */
 @media only screen and (max-width:599px){
+  #skills
+{
+  width: 100vw;
+  height: 140%;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+  .skillbar
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skillstatus
+  {
+    font-size: .9em;
+  }
+  .skillbar-both .bar .skill-info span
+{
+  font-size: 9px;
+  font-weight: 600;
   
+}
+.skillbar-both
+{
+  width: 350px;
+  margin-bottom: 5%;
+}
+.skillbar-both .progressline span::after
+{
+  font-size: 9px;
+}
 }
 
 
@@ -830,7 +980,33 @@ span.profile
 
 /* sp */
 @media only screen and (max-width:599px){
-  
+  #services
+{
+  width: 100vw;
+  height: 200%;
+  padding-top: 80px;
+}
+
+.card .cardicon
+{
+  position: absolute;
+  width: 45px;
+  top: 3%;
+
+}
+.card-container .card
+{
+    width: 250px;
+    height: 370px;
+}
+.card-container .card .cardcontent h5
+{
+  font-size: 1.1em;
+}
+.card-container .card .cardcontent p
+{
+  font-size: .9em;
+}
 }
 
 
@@ -942,7 +1118,26 @@ button.livedemo_btn
 
 /* sp */
 @media only screen and (max-width:599px){
+  #works
+{
+  height: 70vh;
   
+}
+  .swiper-slide 
+{
+  width: 150px;
+  height: 250px;
+}
+p.card_content
+{
+  font-size: .5em;
+  padding-bottom: 5%;
+}
+
+button.livedemo_btn
+{
+  font-size: .7em;
+}
 }
 
 
@@ -1177,7 +1372,30 @@ p.contact-subtext
 
 /* sp */
 @media only screen and (max-width:599px){
+  #contact
+{
+  height: 100vh;
   
+}
+  .contactarea
+{
+  display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.column_left {
+  margin-top: 3%;
+  margin-right: 0%;
+}
+
+
+
+
 }
 
 /* スクロールアップボタン */
