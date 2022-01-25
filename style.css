@@ -727,29 +727,29 @@ span.profile
 /* html */
 .progressline.html span
 {
-  width: 85%;
+  width: 70%;
 }
 .progressline.html span::after
 {
-  content: "85%";
+  content: "70%";
 }
 /* css */
 .progressline.css span
 {
-  width: 70%;
+  width: 65%;
 }
 .progressline.css span::after
 {
-  content: "70%";
+  content: "65%";
 }
 /* Js */
 .progressline.js span
 {
-  width: 65%;
+  width: 50%;
 }
 .progressline.js span::after
 {
-  content: "65%";
+  content: "50%";
 }
 /* react */
 .progressline.react span
@@ -763,30 +763,30 @@ span.profile
 /* python */
 .progressline.python span
 {
-  width: 65%;
+  width: 40%;
 }
 .progressline.python span::after
 {
-  content: "65%";
+  content: "40%";
 }
 
 /* django */
 .progressline.django span
 {
-  width: 60%;
+  width: 30%;
 }
 .progressline.django span::after
 {
-  content: "60%";
+  content: "30%";
 }
 /* sql */
 .progressline.sql span
 {
-  width: 40%;
+  width: 30%;
 }
 .progressline.sql span::after
 {
-  content: "40%";
+  content: "30%";
 }
 
 /* タブレット */
