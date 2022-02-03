@@ -4,5 +4,5 @@
 [リンク](https://iori-portfolio.herokuapp.com/)
 
 ## 使用言語
-Using HTML/CSS/JavaScript, Particles.js/Anime.js
+Using HTML/CSS/JavaScript/PHP, Particles.js/Anime.js
 
